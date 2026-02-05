@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="teddy sticker">
+  <rect width="120" height="120" rx="24" fill="#fff7ef"/>
+  <circle cx="42" cy="34" r="13" fill="#a86b46"/>
+  <circle cx="78" cy="34" r="13" fill="#a86b46"/>
+  <circle cx="60" cy="60" r="28" fill="#b97a53"/>
+  <circle cx="60" cy="70" r="11" fill="#f4d9bf"/>
+  <circle cx="50" cy="57" r="3" fill="#2b1f17"/>
+  <circle cx="70" cy="57" r="3" fill="#2b1f17"/>
+  <circle cx="60" cy="69" r="2.5" fill="#2b1f17"/>
+</svg>

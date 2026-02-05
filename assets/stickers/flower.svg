@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="flower sticker">
+  <rect width="120" height="120" rx="24" fill="#f8f4ff"/>
+  <circle cx="60" cy="60" r="12" fill="#ffd25c"/>
+  <circle cx="60" cy="34" r="16" fill="#ff82bb"/>
+  <circle cx="84" cy="60" r="16" fill="#ff82bb"/>
+  <circle cx="60" cy="86" r="16" fill="#ff82bb"/>
+  <circle cx="36" cy="60" r="16" fill="#ff82bb"/>
+</svg>
