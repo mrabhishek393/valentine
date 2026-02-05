@@ -1,0 +1,258 @@
+:root {
+  --pink: #ff4f8b;
+  --bg: #130712;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #37102f 0%, var(--bg) 60%);
+  color: var(--white);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.screen--active {
+  display: flex;
+}
+
+.photo-collage {
+  position: absolute;
+  inset: -10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  transform: rotate(-7deg) scale(1.1);
+  filter: blur(0.6px) saturate(1.1);
+}
+
+.photo-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  border-radius: 20px;
+}
+
+.overlay,
+.celebration-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, rgba(19, 7, 18, 0.72), rgba(67, 8, 42, 0.82));
+}
+
+.card,
+.proposal-card,
+.celebration-card {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: min(90vw, 580px);
+  padding: 2rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.primary-btn,
+.yes-btn,
+.no-btn {
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.primary-btn,
+.yes-btn {
+  background: linear-gradient(120deg, #ff5d9b, #ff2f74);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 79, 139, 0.45);
+}
+
+.primary-btn:hover,
+.yes-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.buttons-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  position: relative;
+  min-height: 150px;
+}
+
+.no-btn {
+  background: #fff;
+  color: #aa2454;
+  position: relative;
+}
+
+.corner-stickers .sticker {
+  position: absolute;
+  width: min(23vw, 160px);
+  opacity: 0.92;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.sticker--tl {
+  top: 1rem;
+  left: 1rem;
+}
+
+.sticker--tr {
+  top: 1rem;
+  right: 1rem;
+}
+
+.sticker--bl {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.sticker--br {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#proposal .corner-stickers {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 400ms ease;
+}
+
+#proposal.screen--active .corner-stickers {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#celebration {
+  background: radial-gradient(circle at center, #ff9fd0 0%, #3d0726 65%, #140510 100%);
+}
+
+.emoji-burst {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.emoji-burst span {
+  position: absolute;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  animation: float 2.8s ease-in-out infinite alternate;
+}
+
+.emoji-burst span:nth-child(1) {
+  top: 14%;
+  left: 14%;
+}
+
+.emoji-burst span:nth-child(2) {
+  top: 18%;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.emoji-burst span:nth-child(3) {
+  top: 64%;
+  left: 18%;
+  animation-delay: 0.5s;
+}
+
+.emoji-burst span:nth-child(4) {
+  top: 68%;
+  right: 16%;
+  animation-delay: 0.7s;
+}
+
+.emoji-burst span:nth-child(5) {
+  top: 10%;
+  left: 50%;
+  animation-delay: 1s;
+}
+
+.emoji-burst span:nth-child(6) {
+  top: 80%;
+  left: 48%;
+  animation-delay: 1.2s;
+}
+
+.emoji-burst span:nth-child(7) {
+  top: 42%;
+  left: 8%;
+  animation-delay: 1.4s;
+}
+
+.emoji-burst span:nth-child(8) {
+  top: 40%;
+  right: 8%;
+  animation-delay: 1.6s;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-14px) scale(1.1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.date-info {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+.date-info a {
+  color: #ffeef6;
+}
+
+@media (max-width: 760px) {
+  .corner-stickers .sticker {
+    width: 22vw;
+  }
+
+  .buttons-wrap {
+    min-height: 190px;
+  }
+}
