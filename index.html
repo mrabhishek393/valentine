@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine 💖</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="landing" class="screen screen--active" aria-label="Landing screen">
+        <div class="photo-collage" aria-hidden="true">
+          <img src="assets/photos/photo1.svg" alt="Romantic memory collage 1" />
+          <img src="assets/photos/photo2.svg" alt="Romantic memory collage 2" />
+          <img src="assets/photos/photo3.svg" alt="Romantic memory collage 3" />
+          <img src="assets/photos/photo4.svg" alt="Romantic memory collage 4" />
+        </div>
+        <div class="overlay"></div>
+        <div class="card">
+          <h1>2 Years of Us 💕</h1>
+          <p>Every memory with you is my favorite one. Tap to open your surprise.</p>
+          <button id="openProposal" class="primary-btn">Click Me ✨</button>
+        </div>
+      </section>
+
+      <section id="proposal" class="screen" aria-hidden="true" aria-label="Proposal screen">
+        <div class="proposal-card">
+          <h2>Will you be my Valentine? 🌹</h2>
+          <p id="teaseText">You know the answer is yes... right? 🥺</p>
+          <div class="buttons-wrap">
+            <button id="yesBtn" class="yes-btn">Yes 💖</button>
+            <button id="noBtn" class="no-btn" aria-label="No button that playfully dodges">No 🙈</button>
+          </div>
+        </div>
+
+        <div class="corner-stickers" aria-hidden="true">
+          <img src="assets/stickers/heart.svg" class="sticker sticker--tl" alt="" />
+          <img src="assets/stickers/flower.svg" class="sticker sticker--tr" alt="" />
+          <img src="assets/stickers/teddy.svg" class="sticker sticker--bl" alt="" />
+          <img src="assets/stickers/ring.svg" class="sticker sticker--br" alt="" />
+        </div>
+      </section>
+
+      <section id="celebration" class="screen" aria-hidden="true" aria-label="Celebration screen">
+        <div class="celebration-overlay"></div>
+
+        <div class="emoji-burst" aria-hidden="true">
+          <span>🎉</span><span>💃</span><span>💖</span><span>✨</span><span>🥳</span><span>🕺</span><span>🌸</span><span>💞</span>
+        </div>
+
+        <div class="celebration-card">
+          <h2>YAYYY! You said YES! 🎉💃</h2>
+          <p>I can't wait for our perfect date night and many more memories together.</p>
+          <div id="dateInfo" class="date-info hidden" role="status" aria-live="polite">
+            <h3>Date Plan 💌</h3>
+            <p><strong>Time:</strong> Saturday, 7:00 PM</p>
+            <p>
+              <strong>Location:</strong>
+              <a href="https://maps.google.com/?q=Romantic+Rooftop+Restaurant" target="_blank" rel="noopener noreferrer">
+                Romantic Rooftop Restaurant (Open in Google Maps)
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
