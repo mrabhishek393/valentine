@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Memory photo 2">
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb48e"/>
+      <stop offset="1" stop-color="#8e2155"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 420 C200 300, 460 520, 800 370 L800 600 L0 600 Z" fill="#fff" opacity=".18"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-family="Poppins, Arial" font-size="56" font-weight="700">Our Memory #2</text>
+</svg>

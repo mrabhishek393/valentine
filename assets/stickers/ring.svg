@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="ring sticker">
+  <rect width="120" height="120" rx="24" fill="#eef9ff"/>
+  <circle cx="60" cy="70" r="24" fill="none" stroke="#f3c44f" stroke-width="10"/>
+  <path d="M60 22 L72 42 L60 52 L48 42 Z" fill="#7be1ff" stroke="#46b3e6" stroke-width="3"/>
+</svg>
