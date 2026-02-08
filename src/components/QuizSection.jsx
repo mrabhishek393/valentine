@@ -1,34 +1,40 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Import quiz memory photos
+import memory1 from '../assets/quiz/memory-1.jpg';
+import memory2 from '../assets/quiz/memory-2.jpeg';
+import memory3 from '../assets/quiz/memory-3.jpg';
+import memory4 from '../assets/quiz/memory-4.jpg';
+
 const questions = [
     {
-        question: "Where was our first trip? (One word)",
-        answer: "mountains",
-        hint: "We saw snow!",
+        question: "Where was our first trip (as a couple/to-be)? (One word)",
+        answer: "pondicherry",
+        hint: "It was raining cats and dogs. And we went there twice",
         correctFeedback: "Yes! Correct! 🏔️",
-        memoryImg: "https://placehold.co/300x300/pink/white?text=Memory+1"
+        memoryImg: memory1
     },
     {
         question: "Who said 'I Love You' first?",
-        answer: "you",
-        hint: "It rhymes with 'shoe'...",
-        correctFeedback: "Good Job, Love! ❤️",
-        memoryImg: "https://placehold.co/300x300/purple/white?text=Memory+2"
+        answer: "Suyashi",
+        hint: "It happened on the day when anjali and vijay were too drunk",
+        correctFeedback: "Good Job, Chihu! ❤️",
+        memoryImg: memory3
     },
     {
         question: "What's our favorite dish?",
-        answer: "pizza",
-        hint: "It has cheese and crust...",
+        answer: "Mushroom pasta",
+        hint: "We used to make it every weekend.",
         correctFeedback: "Yum! 🍕",
-        memoryImg: "https://placehold.co/300x300/red/white?text=Memory+3"
+        memoryImg: memory2
     },
     {
         question: "What's our favorite activity?",
-        answer: "movies",
-        hint: "We need popcorn for this...",
-        correctFeedback: "Perfect date night. 🎬",
-        memoryImg: "https://placehold.co/300x300/orange/white?text=Memory+4"
+        answer: "Cafe hopping",
+        hint: "We go to work there outside of home",
+        correctFeedback: "Perfect work dates. 🎬",
+        memoryImg: memory4
     }
 ];
 
@@ -148,7 +154,6 @@ const QuizSection = ({ onComplete }) => {
                                 onChange={(e) => setInputValue(e.target.value)}
                                 placeholder="Type your answer..."
                                 className="w-full p-4 rounded-xl border-2 border-violet-200 focus:border-violet-500 focus:outline-none text-lg text-center"
-                                autoFocus
                             />
 
                             <motion.button
@@ -236,15 +241,21 @@ const QuizSection = ({ onComplete }) => {
 
                         <article className="prose prose-lg text-yellow-950 leading-loose mx-auto">
                             <p>
-                                These past two years have been the most magical chapter of my life. From our first date in July 2024 to this very moment,
-                                every second with you has been a treasure. You are my best friend, my confidant, and my greatest adventure.
+                                These past two years have been the most magical chapter of my life. From the moment I sway you to this very moment,
+                                every second with you has been a treasure. You are my best friend, and my everything.
                             </p>
                             <p>
-                                I love the way you smile when you see a dog, how you sing in the car (even the wrong lyrics), and how you make everything
+                                You are the most beautiful, intellectual, adorable, cute and pretty ( and so much more) girl to ever exist on this earth.
+                                Words, these words cant describe you. Theres no word that can decribe your personality, theres no sentence that can describe your beauty
+                                and theres no paragraph that can describe you, still I am trying.
+                                I love your smile, your cute harkatein, your cheering personality and how you make everything
                                 feel okay just by being there. You've taught me what true partnership means.
                             </p>
                             <p>
-                                I promise to always be your biggest fan, to listen to stories, and to love you more with each passing day.
+                                I want you to be always be happy and healthy, and that you achieve everything that you ever wanted.
+                                Can you stop being so damn pretty all the time? I will always take care of you, I love doing things for you, treating you like my queen.
+                                So please dont stop being so cute and the best human being.
+                                I promise to always be your biggest fan, to listen to your stories, and to love you more with each passing day.
                                 Life is beautiful, but it's breathtaking with you.
                             </p>
                             <p className="font-bold">

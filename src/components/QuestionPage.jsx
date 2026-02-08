@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 // GIFs are now local assets
-import bearKiss from '../assets/bear-kiss.gif';
-import bearSad from '../assets/bear-sad.gif';
+import proposePanda from '../assets/propose-panda.gif';
+import catBlush from '../assets/cat-blush.gif';
 
 const QuestionPage = ({ onYes }) => {
     const [noButtonPos, setNoButtonPos] = useState({ x: 0, y: 0, position: 'relative' });
     const [noText, setNoText] = useState("No");
-    const [currentGif, setCurrentGif] = useState(bearKiss);
+    const [currentGif, setCurrentGif] = useState(proposePanda);
 
     const noTexts = [
         "No", "Are you sure?", "Really sure?", "Think again!", "Last chance!",
@@ -24,7 +24,7 @@ const QuestionPage = ({ onYes }) => {
 
         setNoButtonPos({ x, y, position: 'absolute' });
         setNoText(noTexts[Math.floor(Math.random() * noTexts.length)]);
-        setCurrentGif(bearSad);
+        setCurrentGif(catBlush);
     };
 
     const handleYes = () => {

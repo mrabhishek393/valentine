@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import heroVideo from '../assets/our-story.mp4';
 
 const HeroSection = () => {
     // You should replace this with your actual video file placed in the public folder or src/assets
@@ -9,32 +10,38 @@ const HeroSection = () => {
     return (
         <div className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black">
             {/* Video Background Placeholder */}
-            <div className="absolute inset-0 z-0 bg-gray-900 opacity-60">
-                {/* <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-                     <source src="/path/to/your/video.mp4" type="video/mp4" />
-                 </video> */}
-                <div className="w-full h-full flex items-center justify-center text-white/20 text-4xl font-bold">
-                    [ Video of Us Playing Here ]
-                </div>
+            {/* Background Blue Layer (Fills Screen) */}
+            <div className="absolute inset-0 z-0 bg-black">
+                <video autoPlay loop muted playsInline className="w-full h-full object-cover blur-md opacity-50 scale-110">
+                    <source src={heroVideo} type="video/mp4" />
+                </video>
+            </div>
+
+            {/* Foreground Video (Full Visibility) */}
+            <div className="absolute inset-0 z-0 flex items-center justify-center">
+                <video autoPlay loop muted playsInline className="w-full h-full object-contain max-w-[800px] shadow-2xl">
+                    <source src={heroVideo} type="video/mp4" />
+                </video>
             </div>
 
             <div className="z-10 text-center text-white p-8">
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg"
+                    transition={{ duration: 1.5, ease: "easeOut" }}
+                    className="flex flex-col items-center"
                 >
-                    Our Story
-                </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 2, delay: 2 }}
-                    className="text-xl md:text-2xl font-light"
-                >
-                    A journey of love, laughter, and us.
-                </motion.p>
+                    <h1 className="text-5xl md:text-8xl font-serif tracking-tighter text-white mb-2 mix-blend-overlay opacity-90">
+                        OUR STORY
+                    </h1>
+                    <div className="w-24 h-px bg-gradient-to-r from-transparent via-pink-200 to-transparent my-6 opacity-80"></div>
+                    <p className="text-lg md:text-2xl font-light tracking-[0.3em] uppercase font-sans text-white/90">
+                        <span className="text-rose-200 drop-shadow-sm">Chihu</span> <span className="mx-2 opacity-50 text-white font-thin">&</span> <span className="text-indigo-200 drop-shadow-sm">Sheku</span>
+                    </p>
+                    <p className="text-xs md:text-sm font-serif italic tracking-widest text-amber-100/80 mt-2">
+                        est. forever
+                    </p>
+                </motion.div>
             </div>
 
             {/* Scroll Indication */}

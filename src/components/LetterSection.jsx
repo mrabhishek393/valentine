@@ -28,14 +28,20 @@ const LetterSection = () => {
 
                 <article className="prose prose-lg text-gray-700 leading-loose" style={{ lineHeight: '2em' }}>
                     <p>
-                        These past two years have been the most magical chapter of my life. From our first date in July 2024 to this very moment,
-                        every second with you has been a treasure. You are my best friend, my confidant, and my greatest adventure.
+                        These past two years have been the most magical chapter of my life. From the moment I sway you to this very moment,
+                        every second with you has been a treasure. You are my best friend, and my everything.
                     </p>
                     <p>
-                        I love the way you smile when you see a dog, how you sing in the car (even the wrong lyrics), and how you make everything
+                        You are the most beautiful, intellectual, adorable, cute and pretty ( and so much more) girl to ever exist on this earth.
+                        Words, these words cant describe you. Theres no word that can decribe your personality, theres no sentence that can describe your beauty
+                        and theres no paragraph that can describe you, still I am trying.
+                        I love your smile, your cute harkatein, your cheering personality and how you make everything
                         feel okay just by being there. You've taught me what true partnership means.
                     </p>
                     <p>
+                        I want you to be always be happy and healthy, and that you achieve everything that you ever wanted.
+                        Can you stop being so damn pretty all the time? I will always take care of you, I love doing things for you, treating you like my queen.
+                        So please dont stop being so cute and the best human being.
                         I promise to always be your biggest fan, to listen to your stories, and to love you more with each passing day.
                         Life is beautiful, but it's breathtaking with you.
                     </p>
