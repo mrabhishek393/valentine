@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'; // Importing at the top
 import HeroSection from './components/HeroSection';
 import TimelineSection from './components/TimelineSection';
 import QuizSection from './components/QuizSection';
-import LetterSection from './components/LetterSection';
 import QuestionPage from './components/QuestionPage';
 import CelebrationPage from './components/CelebrationPage';
 import LandingPage from './components/LandingPage';
